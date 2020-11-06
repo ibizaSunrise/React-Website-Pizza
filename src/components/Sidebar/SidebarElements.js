@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside`
     align-items: center;
     top: 0;
     transition: 0.3s ease-in-out;
-    /* right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')}; */
+    right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
 
     @media screen and (max-width: 400px){
         width: 100%;
@@ -46,7 +46,43 @@ export const SidebarMenu = styled.div`
 `;
 
 export const SidebarLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: #000;
+    cursor: pointer;
 
+    &:hover{
+        color: #e31837;
+        transition: 0.2s ease-in-out;
+    }
 `;
-export const SideBtnWrap = styled.div``;
-export const SidebarRoute = styled.div``;
+
+
+export const SideBtnWrap = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+export const SidebarRoute = styled(Link)`
+    background: #e31837;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background: #fff;
+        color: #010606;
+        transition: 0.2s ease-in-out;
+       
+    }
+`;
