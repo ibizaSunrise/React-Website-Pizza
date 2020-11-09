@@ -4,7 +4,8 @@ import { GlobalStyle } from './globalStyles';
 import { Hero } from './components/Hero'
 import  Products  from './components/Products';
 import  Feature  from './components/Feature';
-import { productData } from './components/Products/data';
+import { productData, productDataTwo } from './components/Products/data';
+import Footer from './components/Footer'
 
 
 
@@ -16,6 +17,8 @@ function App() {
       <Hero/>
       <Products heading = 'Choose your favorite' data = {productData}/>
       <Feature/>
+      <Products heading = 'Sweet Treats for You' data = {productDataTwo}/>
+      <Footer/>
     </Router>
   );
 }
